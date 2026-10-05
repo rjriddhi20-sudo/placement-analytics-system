@@ -97,3 +97,29 @@ git push -u origin main
 
 Because all SQL is in `src/db.py`, the app can grow into a multi-student system by adding a `users`/`students`
 table and a `user_id` column to the other tables, then adding login. The pages would not need to change much.
+
+## Agile Kanban Workflow
+
+This project follows an Agile Kanban methodology.
+
+### Workflow
+
+Todo → In Progress → Done
+
+### WIP Limit
+
+A maximum of 3 tasks are kept in the In Progress column at one time.
+
+Tasks are moved from Todo to In Progress when development begins and moved to Done after completion and testing.
+
+### Agile Practices Used
+
+- User Stories
+- GitHub Issues
+- Priority levels
+- Labels
+- Milestones
+- Kanban board
+- WIP limit
+- Incremental development
+- Testing before completion

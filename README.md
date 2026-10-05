@@ -98,28 +98,74 @@ git push -u origin main
 Because all SQL is in `src/db.py`, the app can grow into a multi-student system by adding a `users`/`students`
 table and a `user_id` column to the other tables, then adding login. The pages would not need to change much.
 
-## Agile Kanban Workflow
+## Agile Methodology
 
-This project follows an Agile Kanban methodology.
+The Placement Analytics System is developed using the Agile Kanban methodology.
 
-### Workflow
+### User Stories
+
+The system requirements are represented as user stories from the perspective of a student. Each user story describes a specific requirement of the placement analytics system.
+
+### Kanban Workflow
+
+The project uses a GitHub Kanban board with three stages:
 
 Todo → In Progress → Done
 
+- **Todo:** Planned work that has not started.
+- **In Progress:** Work currently being developed or tested.
+- **Done:** Work that has been completed and verified.
+
+### Prioritization
+
+Issues are prioritized as:
+
+- **High:** Essential functionality
+- **Medium:** Important supporting functionality
+- **Low:** Optional improvements
+
+### Labels
+
+GitHub labels are used to categorize work:
+
+- `user-story`
+- `feature`
+- `ui`
+- `backend`
+- `bug`
+- `testing`
+- `documentation`
+
 ### WIP Limit
 
-A maximum of 3 tasks are kept in the In Progress column at one time.
+A maximum of three tasks are kept in the In Progress column at a time. This helps prevent excessive work in progress and keeps development focused.
 
-Tasks are moved from Todo to In Progress when development begins and moved to Done after completion and testing.
+### Milestone
 
-### Agile Practices Used
+The issues are grouped under:
 
-- User Stories
-- GitHub Issues
-- Priority levels
-- Labels
-- Milestones
-- Kanban board
-- WIP limit
-- Incremental development
-- Testing before completion
+**Placement Analytics System – PBL**
+
+This milestone represents the overall development of the mini PBL.
+
+### Development Workflow
+
+Requirements  
+↓  
+User Story  
+↓  
+GitHub Issue  
+↓  
+Priority & Labels  
+↓  
+Todo  
+↓  
+In Progress  
+↓  
+Testing  
+↓  
+Done
+
+### Future Scalability
+
+The current application is designed for personal use by a single student. The architecture can be extended in the future to support multiple students, authentication, centralized student data and additional analytics.
